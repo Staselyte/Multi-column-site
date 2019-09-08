@@ -4,6 +4,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #313534;
+}
+
 nav {
   grid-area: navigation;
 }
@@ -44,6 +49,7 @@ ul {
 }
 
 .mainnav {
+  z-index: 999;
   position: fixed;
   display: flex;
   justify-content: flex-end;
@@ -51,7 +57,7 @@ ul {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   width: 100vw;
-  background-color: rgb(178, 172, 174, 0.2)
+  background-color: rgb(178, 172, 174, 0.1);
 }
 
 
@@ -67,6 +73,41 @@ a {
   color: #313534;
 }
 
-img {
-  width: 100%;
+.mainph {
+  position: relative;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 25%;
+}
+
+h3 {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 32%;
+  line-height: 4;
+  font-size: 1rem;
+}
+
+button {
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 35%;
+  text-align: center;
 }
