@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  grid-area: navigation;
+}
+
+.main {
+  grid-area: main;
+}
+
+.fl-1 {
+  grid-area: fl-1;
+}
+
+.fl-2 {
+  grid-area: fl-2;
+}
+
+.fl-3 {
+  grid-area: fl-3;
+}
+
+.reviews {
+  grid-area: twoboxes;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "navigation navigation navigation"
+  "main main main"
+  "fl-1 fl-2 fl-3"
+  "twoboxes twoboxes twoboxes";
+}
+
+ul {
+  list-style-type: none;
+}
+
+.mainnav {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  width: 100vw;
+  background-color: rgb(178, 172, 174, 0.2)
+}
+
+
+li.logo {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2rem;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+  color: #313534;
+}
+
+img {
+  width: 100%;
+}
