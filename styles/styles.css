@@ -76,3 +76,43 @@ h3 {
   border: 1px solid #EB7C9B;
   border-radius: 50px;
 }
+
+.reviews {
+  display: flex;
+  height: 300px;
+}
+
+.column1, .column2 {
+  flex: 50%;
+}
+
+.column1 {
+  background-color: #D7CACC;
+}
+
+.reviews img {
+  display: block;
+  margin: 30px auto 30px auto;
+  height: 100px;
+  border-radius: 50%;
+}
+
+p {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 0 20px 0 20px;
+}
+
+p span {
+  font-size: 0.7rem;
+}
+
+.fullbleed {
+  height: 500px;
+  overflow: scroll;
+}
+
+.fullbleed img {
+  max-width: 100%;
+}
