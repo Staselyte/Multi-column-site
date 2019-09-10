@@ -6,65 +6,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   color: #313534;
-}
-
-nav {
-  grid-area: navigation;
-}
-
-.main {
-  grid-area: main;
-}
-
-.fl-1 {
-  grid-area: fl-1;
-}
-
-.fl-2 {
-  grid-area: fl-2;
-}
-
-.fl-3 {
-  grid-area: fl-3;
-}
-
-.reviews {
-  grid-area: twoboxes;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "navigation navigation navigation"
-  "main main main"
-  "fl-1 fl-2 fl-3"
-  "twoboxes twoboxes twoboxes";
-}
-
-ul {
-  list-style-type: none;
-}
-
-.mainnav {
-  z-index: 999;
-  position: fixed;
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  width: 100vw;
-  background-color: rgb(178, 172, 174, 0.1);
-}
-
-
-li.logo {
-  font-family: 'Homemade Apple', cursive;
-  font-size: 2rem;
-  flex: 1;
 }
 
 a {
@@ -73,41 +16,63 @@ a {
   color: #313534;
 }
 
-.mainph {
-  position: relative;
-  display: inline-block;
+.mainpage {
+  background-image: url(/Users/staselyte/Documents/GitHub/Multi-column-site/images/finalmain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  background-color: rgb(178, 172, 174, 0.1);
+}
+
+.bloom {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2rem;
+  text-align: left;
+  flex: 1;
+}
+
+.gallery {
+  overflow: hidden;
+}
+
+.gallery img {
+  float: left;
+  width: 33.33%;
+}
+
+.text {
+  position: absolute;
+  top: 25%;
+  line-height: 2.5;
+  width: 100vw;
 }
 
 h1 {
-  font-size: 2.5rem;
-  position: absolute;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 3rem;
   text-align: center;
-  top: 25%;
 }
 
 h3 {
-  position: absolute;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 32%;
-  line-height: 4;
+  margin: 0 auto 40px auto;
   font-size: 1rem;
+  text-align: center;
+
 }
 
-button {
+.button {
+  color: #EB7C9B;
   display: inline-block;
-  position: absolute;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 35%;
-  text-align: center;
+  border: 1px solid #EB7C9B;
+  border-radius: 50px;
 }
