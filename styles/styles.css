@@ -14,6 +14,12 @@ a {
   text-decoration: none;
   padding: 0 20px 0 20px;
   color: #313534;
+  transition: all 0.4s;
+}
+
+a:hover {
+  color: #6B1E27;
+  font-size: 2rem;
 }
 
 .mainpage {
@@ -75,6 +81,14 @@ h3 {
   display: inline-block;
   border: 1px solid #EB7C9B;
   border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  font-size: 1.4rem;
+  color: #6B1E27;
+  border: 1px solid #6B1E27;
+  text-decoration: underline;
 }
 
 .reviews {
@@ -109,10 +123,26 @@ p span {
 }
 
 .fullbleed {
-  height: 500px;
+  height: 400px;
   overflow: scroll;
+  background-image: url(/Users/staselyte/Documents/GitHub/Multi-column-site/images/fullbleed.jpg);
+  background-position: center;
+  background-size:cover;
 }
 
-.fullbleed img {
-  max-width: 100%;
+.social {
+  background-color: #D7CACC;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.copybloom {
+  text-align: center;
+  font-size: 1rem;
+  background-color: #D7CACC;
 }
